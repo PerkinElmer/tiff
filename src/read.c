@@ -175,15 +175,13 @@ SEXP read_tiff_directory(SEXP sFn, SEXP sAll) {
 	rj.len = LENGTH(sFn);
 	rj.alloc = rj.ptr = 0;
 	rj.f = f = 0;
+        tiff = TIFF_Open("rmc", &rj); /* no mmap, no chopping */
     } else {
 	if (TYPEOF(sFn) != STRSXP || LENGTH(sFn) < 1) Rf_error("invalid filename");
 	fn = CHAR(STRING_ELT(sFn, 0));
-	f = fopen(fn, "rb");
-	if (!f) Rf_error("unable to open %s", fn);
-	rj.f = f;
+	tiff = TIFFOpen(fn, "rmc");
     }
 
-    tiff = TIFF_Open("rmc", &rj); /* no mmap, no chopping */
     if (!tiff)
 	Rf_error("Unable to open TIFF");
     
@@ -266,15 +264,13 @@ SEXP read_tiff(SEXP sFn, SEXP sNative, SEXP sAll, SEXP sConvert, SEXP sInfo, SEX
 	rj.len = LENGTH(sFn);
 	rj.alloc = rj.ptr = 0;
 	rj.f = f = 0;
+        tiff = TIFF_Open("rmc", &rj); /* no mmap, no chopping */
     } else {
 	if (TYPEOF(sFn) != STRSXP || LENGTH(sFn) < 1) Rf_error("invalid filename");
 	fn = CHAR(STRING_ELT(sFn, 0));
-	f = fopen(fn, "rb");
-	if (!f) Rf_error("unable to open %s", fn);
-	rj.f = f;
+	tiff = TIFFOpen(fn, "rmc");
     }
 
-    tiff = TIFF_Open("rmc", &rj); /* no mmap, no chopping */
     if (!tiff)
 	Rf_error("Unable to open TIFF");
 
