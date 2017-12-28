@@ -4,3 +4,4 @@
 ^src/lib/
 ^src/include/
 ^\.travis\.yml$
+^appveyor\.yml$
