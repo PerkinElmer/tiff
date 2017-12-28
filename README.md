@@ -1,5 +1,5 @@
 [![Project Status: Active ? The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Build Status](https://travis-ci.org/PKI-Kent/tiff.svg?branch=master)](https://travis-ci.org/PKI-Kent/tiff)
+[![Build Status](https://travis-ci.org/PerkinElmer/tiff.svg?branch=master)](https://travis-ci.org/PKI-Kent/tiff)
 [![packageversion](https://img.shields.io/badge/Package%20version-0.1.6-orange.svg?style=flat-square)](commits/master)
  
 # tiff
