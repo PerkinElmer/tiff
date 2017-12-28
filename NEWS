@@ -1,6 +1,6 @@
 NEWS/Changelog
 
-0.1-6
+0.1.6
     o   Add limited support for tiled images. Supports 8-, 16- and 32-bit
         integer and float images with spp=1 or 3. No support for indexed,
         color map, as.is, or planar format color.
