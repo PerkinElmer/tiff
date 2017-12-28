@@ -1,6 +1,6 @@
 [![Project Status: Active ? The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Build Status](https://travis-ci.org/PerkinElmer/tiff.svg?branch=master)](https://travis-ci.org/PerkinElmer/tiff)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/PerkinElmer/tiff?branch=master&svg=true)](https://ci.appveyor.com/project/PerkinElmer/tiff)
+[![Travis Build Status](https://travis-ci.org/PerkinElmer/tiff.svg?branch=master)](https://travis-ci.org/PerkinElmer/tiff)
+[![Appveyor Build status](https://ci.appveyor.com/api/projects/status/eonxe9blgyydaws5?svg=true)](https://ci.appveyor.com/project/PKI-Kent/tiff)
 [![packageversion](https://img.shields.io/badge/Package%20version-0.1.6-orange.svg?style=flat-square)](commits/master)
  
 # tiff
@@ -31,3 +31,11 @@ Install `tiff` from github with:
 devtools::install_github("PerkinElmer/tiff")
 ```
 
+Binary builds for 64-bit Windows are available from
+[Appveyor](https://ci.appveyor.com/project/PKI-Kent/tiff/build/artifacts).
+
+Download the `.zip` file. Then run this command and choose the downloaded file:
+
+```r
+install.packages(file.choose(), repos=NULL)
+```
