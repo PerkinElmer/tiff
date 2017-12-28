@@ -3,3 +3,4 @@
 ^src/local323.zip$
 ^src/lib/
 ^src/include/
+^\.travis\.yml$
