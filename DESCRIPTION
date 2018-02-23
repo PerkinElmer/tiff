@@ -1,5 +1,5 @@
 Package: tiff
-Version: 0.1.6
+Version: 0.1.7
 Title: Read and write TIFF images
 Authors@R: as.person(c(
     "Simon Urbanek <Simon.Urbanek@r-project.org> [aut, cre]", 
