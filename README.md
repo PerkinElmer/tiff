@@ -1,7 +1,7 @@
 [![Project Status: Active ? The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Travis Build Status](https://travis-ci.org/PerkinElmer/tiff.svg?branch=master)](https://travis-ci.org/PerkinElmer/tiff)
 [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/eonxe9blgyydaws5?svg=true)](https://ci.appveyor.com/project/PKI-Kent/tiff)
-[![packageversion](https://img.shields.io/badge/Package%20version-0.1.6-orange.svg?style=flat-square)](commits/master)
+[![packageversion](https://img.shields.io/badge/Package%20version-0.1.7-orange.svg?style=flat-square)](commits/master)
  
 # tiff
 
