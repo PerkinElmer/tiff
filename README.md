@@ -28,7 +28,7 @@ Install `tiff` from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("PerkinElmer/tiff")
+devtools::install_github("akoyabio/tiff")
 ```
 
 Binary builds for 64-bit Windows are available from
