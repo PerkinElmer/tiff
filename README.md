@@ -30,12 +30,3 @@ Install `tiff` from github with:
 # install.packages("devtools")
 devtools::install_github("akoyabio/tiff")
 ```
-
-Binary builds for 64-bit Windows are available from
-[Appveyor](https://ci.appveyor.com/project/PKI-Kent/tiff/build/artifacts).
-
-Download the `.zip` file. Then run this command and choose the downloaded file:
-
-```r
-install.packages(file.choose(), repos=NULL)
-```
