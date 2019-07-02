@@ -24,7 +24,16 @@ development environment.
 - **Mac**: Install Xcode from the Mac App Store.
 - **Linux**: Install a compiler and various development libraries (details vary across different flavors of Linux).
 
-Install `tiff` from github with:
+Mac users must also install `libtiff`; use [homebrew](https://brew.sh/)
+with the command `brew install libtiff`.
+
+Linux users must install the development version of `libtiff`
+using the package manager for their Linux version.
+
+- Redhat Linux: `sudo yum install libtiff-devel`
+- Ubuntu 16.004 LTS: `sudo apt-get install libtiff5-dev`
+
+Finally, install the `tiff` package from github with:
 
 ``` r
 # install.packages("devtools")
