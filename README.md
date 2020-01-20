@@ -17,25 +17,34 @@ See the NEWS file for details.
 
 ## Installation
 
-Installing `tiff` from source requires that you have a working 
-development environment.
+### Prerequisites
 
-- **Windows**: Install [Rtools](https://cran.r-project.org/bin/windows/Rtools/).
-- **Mac**: Install Xcode from the Mac App Store.
-- **Linux**: Install a compiler and various development libraries (details vary across different flavors of Linux).
+Installing the `tiff` package requires that you have a working 
+development environment and, for macOS and Linux, an installed copy of `libtiff`.
 
-Mac users must also install `libtiff`; use [homebrew](https://brew.sh/)
-with the command `brew install libtiff`.
+**Windows**: Install [Rtools](https://cran.r-project.org/bin/windows/Rtools/).
 
-Linux users must install the development version of `libtiff`
-using the package manager for their Linux version.
+**macOS**: 
 
-- Redhat Linux: `sudo yum install libtiff-devel`
-- Ubuntu 16.004 LTS: `sudo apt-get install libtiff5-dev`
+- Install Xcode from the 
+  [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835).
+- Install [Homebrew](https://brew.sh/) using
+  [these instructions](https://brew.sh/).
+- Install `libtiff` with the Terminal command `brew install libtiff`.
 
-Finally, install the `tiff` package from github with:
+
+**Linux**: 
+
+- Install a compiler and the development version of `libtiff`
+using the package manager for your Linux version.
+  - Redhat Linux: `sudo yum install libtiff-devel`
+  - Ubuntu 16.004 LTS: `sudo apt-get install libtiff5-dev`
+
+### Install from GitHub
+
+Finally, install the `tiff` package from GitHub with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("akoyabio/tiff")
+# install.packages("remotes")
+remotes::install_github("akoyabio/tiff")
 ```
